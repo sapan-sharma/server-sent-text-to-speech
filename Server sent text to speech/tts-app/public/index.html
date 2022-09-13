@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	 <meta charset="utf-8" name="viewport" 
+        content= "width=device-width, initial-scale=1.0">
+
+    <title>Text to Speech</title>
+  </head>
+  <body>
+    <div>
+      <h1 id='WelMsg'></h1>
+      <table>
+        
+        <tr>
+          <td>
+          <video id="webcam" autoplay playsinline width="400px" height="400px"></video>
+          <canvas id="canvas" class="d-none hidden" ></canvas>
+          <audio id="snapSound" class='hidden' src="audio/snap.wav" preload = "auto"></audio>
+        </td>
+        <td style="color:Tomato"> <h1 id='UserName'></h1></td>
+        </tr>
+        <tr>
+          <td style="width='50%' height='40%'"><img src="./steve-austin-face.jpg"></td>
+          <td><h2 id='ServerMessage'></h2><button onclick="switchImages()">switch</button></td>
+        </tr>
+      </table>
+    </div>
+    
+    </body>
+
+  <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+  <script type="text/javascript" src="./faces.js"></script>
+  <script src="./textToSpeech.js"></script>
+</html>
