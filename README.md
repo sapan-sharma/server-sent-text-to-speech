@@ -6,3 +6,5 @@ To run the app:
 2. Run client: $ npm run dev
 
 Client runs on port 3000; server on port 5000.
+
+Built using NodeJS, Javascript, Web speech API
